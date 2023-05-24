@@ -6,7 +6,7 @@ import { darkModeContextType } from "../utiles/model";
 
 const IUserContextState: darkModeContextType = {
     isDarkMode: false,
-    toggleIsDarkMood: () => { }
+    toggleIsDarkMode: () => { }
 }
 
 const darkModeContext = createContext<darkModeContextType>(IUserContextState)
