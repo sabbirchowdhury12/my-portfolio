@@ -3,6 +3,8 @@ import darkModeContext from './context/darkModeContext'
 import Header from './components/Header/Header'
 import './style/Custom.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Home from './components/Home/Home';
+import About from './components/About/About';
 
 
 
@@ -26,6 +28,8 @@ function App() {
     <darkModeContext.Provider value={{ toggleIsDarkMode, isDarkMode }}>
       <div className='App'>
         <Header />
+        <Home/>
+        <About/>
       </div>
     </darkModeContext.Provider>
   )

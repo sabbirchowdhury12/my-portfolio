@@ -1,0 +1,78 @@
+.home{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3rem;
+}
+.social-icon{
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;
+}
+.social-icon a{
+    color: var(--title-color);
+}
+
+
+
+.text_title{
+    font-size: var( --h1-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.text_heading::before{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 0.1rem;
+    background-color: var(--text-color);
+    left: 0;
+    top: 0.8rem;
+}
+.text_heading{
+    position: relative;
+    font-size: var(--h2-font-size);
+    padding-left:5rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+    margin-top: 0.7rem;
+    
+}
+
+.text_content{
+    /* max-width: 200px; */
+    margin-bottom: var(--mb-3);
+}
+
+.home_img {
+    background: url('http://localhost:3000/my-portfolio/static/media/syll3.6ef700cbe571a7e8d515.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--container-color);
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    box-shadow: var(--box-shadow-img);
+    animation: profile__animate 8s ease-in-out infinite 1s;
+  }
+
+  @keyframes profile__animate {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
+  

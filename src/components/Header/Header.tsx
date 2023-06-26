@@ -1,5 +1,4 @@
 import { FC, useContext, useEffect, useState } from 'react'
-import styled from 'styled-components';
 import { listNavBar } from '../../utiles/data';
 import darkModeContext from '../../context/darkModeContext';
 import './Header.css'
@@ -99,6 +98,3 @@ const Header: FC = () => {
 
 export default Header;
 
-const Nav = styled.div`
-
-`
