@@ -88,7 +88,9 @@ body.dark .home_social:hover {
 body.dark .home_img {
   box-shadow: inset 9px 10px 10px 0.5px rgba(244, 244, 247, 0.21);
 }
-
+section {
+  min-height: 100vh;
+}
 .container,
 section {
   max-width: 960px;
