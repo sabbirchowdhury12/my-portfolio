@@ -88,6 +88,11 @@ body.dark .home_social:hover {
 body.dark .home_img {
   box-shadow: inset 9px 10px 10px 0.5px rgba(244, 244, 247, 0.21);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   min-height: 100vh;
 }

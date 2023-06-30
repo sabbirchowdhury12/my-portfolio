@@ -6,6 +6,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skill from "./Skill/Skill";
+import Qualification from "./Qualification/Qualification";
+import Contact from "./Contact/Contact";
 
 function App() {
   const [isDarkMode, setIsDarkMOde] = useState<boolean>(false);
@@ -29,6 +31,8 @@ function App() {
         <Home />
         <About />
         <Skill />
+        <Qualification />
+        <Contact />
       </div>
     </darkModeContext.Provider>
   );

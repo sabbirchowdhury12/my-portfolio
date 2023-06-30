@@ -6,7 +6,6 @@ const BackEndSkill = () => {
       <h3 className="skills__title">Backend Development</h3>
       <div className="skills__box">
         <div className="skills__group">
-          {/*  */}
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
@@ -14,7 +13,7 @@ const BackEndSkill = () => {
               <span className="skills__level">Advanced</span>
             </div>
           </div>
-          {/*  */}
+
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
@@ -38,9 +37,8 @@ const BackEndSkill = () => {
             </div>
           </div>
         </div>
-        {/* ====== */}
+
         <div className="skills__group">
-          {/*  */}
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
@@ -48,7 +46,7 @@ const BackEndSkill = () => {
               <span className="skills__level">Advanced</span>
             </div>
           </div>
-          {/*  */}
+
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
