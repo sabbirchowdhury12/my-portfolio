@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Skill from "./Skill/Skill";
 import Qualification from "./Qualification/Qualification";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [isDarkMode, setIsDarkMOde] = useState<boolean>(false);
@@ -33,6 +34,7 @@ function App() {
         <Skill />
         <Qualification />
         <Contact />
+        <Footer />
       </div>
     </darkModeContext.Provider>
   );
