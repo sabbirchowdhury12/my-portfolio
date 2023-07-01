@@ -56,7 +56,7 @@ const Header: FC = () => {
                     smooth={true}
                     duration={50}
                   >
-                    <AiOutlineHome className="icon" />
+                    <i className={`${icon} icon`}></i>
                     {name}
                   </Link>
                 </li>
@@ -87,8 +87,8 @@ const Header: FC = () => {
               </svg>
             </li>
           </ul>
-          <label onClick={() => setToggle(!toggle)} className="close-icon icon">
-            x
+          <label onClick={() => setToggle(!toggle)} className="close-icon ">
+            <i className="uil uil-times icon"></i>
           </label>
         </div>
       </nav>

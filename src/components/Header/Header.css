@@ -37,7 +37,7 @@
   background-color: var(--container-color);
   padding: 2.5px;
   transition: 1s;
-  animation: logo 3s ease-in-out;
+  animation: logo infinite 3s ease-in-out;
   cursor: pointer;
 }
 
@@ -60,12 +60,16 @@
     transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(360deg);
-  }
+  /* 25% {
+    transform: rotate(90deg);
+  }*/
+
+  /* 50% {
+    transform: rotate(180deg);
+  } */
 
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -223,7 +227,7 @@
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.3s;
+    transition: 1s ease-in-out;
   }
 
   .show_menu {
@@ -258,12 +262,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    padding-bottom: 2rem;
   }
 
   .close-icon {
     position: absolute;
     right: 1.3rem;
-    bottom: 0.5rem;
+    top: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--title-color);
