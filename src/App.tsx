@@ -9,6 +9,7 @@ import Skill from "./Skill/Skill";
 import Qualification from "./Qualification/Qualification";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import Project from "./Project/Project";
 
 function App() {
   const [isDarkMode, setIsDarkMOde] = useState<boolean>(false);
@@ -33,6 +34,7 @@ function App() {
         <About />
         <Skill />
         <Qualification />
+        <Project />
         <Contact />
         <Footer />
       </div>

@@ -8,11 +8,6 @@
   gap: 1.5rem;
 }
 
-.container {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .contact-title,
 h2 {
   text-align: center;

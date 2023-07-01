@@ -17,7 +17,7 @@ const card = [
 ];
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Slide triggerOnce>
         <div className="section__title">About Me</div>
       </Slide>

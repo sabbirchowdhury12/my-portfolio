@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -8,6 +8,7 @@
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -23,11 +24,7 @@ body {
   --container-color: #fff;
   --box-shadow-img: inset 9px 10px 10px 0.5px rgba(0, 0, 10, 0.21);
 
-  /* ======== Font and typography ======== */
-  --body-font: "Poppins", sans-serif;
-
   /* .5rem = 8px | 1rem = 16px ... */
-
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -38,7 +35,6 @@ body {
   --tiny-font-size: 0.625rem;
 
   /* ======== Font weight ======== */
-
   --font-normal: 400;
   --font-meduim: 500;
   --font-semi-bold: 600;
@@ -52,10 +48,6 @@ body {
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
-  /* ======== Z-index ======== */
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
 }
 
 /* ======== Light an Dark ======== */
@@ -96,12 +88,13 @@ html {
 section {
   min-height: 100vh;
 }
-.container,
+
 section {
-  max-width: 960px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
+  padding: 6rem 0 2rem;
 }
 
 h1,
