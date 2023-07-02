@@ -29,7 +29,7 @@ const Header: FC = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header ">
       <nav className="nav container">
         <div className="logo">
           <a href="" target="_blank" rel="noreferrer" className="nav_logo">
