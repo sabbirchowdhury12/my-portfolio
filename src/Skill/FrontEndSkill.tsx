@@ -1,77 +1,89 @@
-import React from "react";
+import mehu from "../assets/mehu-2.jpg";
+
+const frontedFristGroupSkillData = [
+  {
+    icon: mehu,
+    name: "HTML",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Typescript",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "BOOTSTRAP",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "GIT",
+    level: "Advanced",
+  },
+];
+
+const frontedSecondGroupSkillData = [
+  {
+    icon: "bx bx-badge-check",
+    name: "TAILWIND",
+    level: "Advanced",
+  },
+  // {
+  //   icon: "bx bx-badge-check",
+  //   name: "Styled-components",
+  //   level: "Advanced",
+  // },
+  {
+    icon: "bx bx-badge-check",
+    name: "JAVASCRIPT",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "React JS",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "GIT",
+    level: "Advanced",
+  },
+];
 
 const FrontEndSkill = () => {
   return (
-    <div className="skills__content">
-      <h3 className="skills__title">Frontend Development </h3>
-      <div className="skills__box">
-        <div className="skills__group">
-          {/*  */}
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">HTML</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          {/*  */}
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Typescript </h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          {/*  */}
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">React</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
+    <div className="skill_content">
+      <h3 className="skill_title">Frontend Development </h3>
+      <div className="skill_box">
+        <div className="skill_group">
+          {frontedFristGroupSkillData.map((skill, ind) => {
+            return (
+              <div className="skills__data">
+                <i className="bx bx-badge-check"></i>
 
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Javascript</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
+                {/* <img src={skill.icon} alt="" /> */}
+                <div>
+                  <h3 className="skills__name">{skill.name}</h3>
+                  <span className="skills__level">{skill.level}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        <div className="skills__group">
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-
-            <div>
-              <h3 className="skills__name">Bootstrap</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          {/*  */}
-          {/*  */}
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">CSS</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Git</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">WordPress </h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
+        <div className="skill_group">
+          {frontedSecondGroupSkillData.map((skill, ind) => {
+            return (
+              <div className="skills__data">
+                <i className="bx bx-badge-check"></i>
+                <div>
+                  <h3 className="skills__name">{skill.name}</h3>
+                  <span className="skills__level">{skill.level}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

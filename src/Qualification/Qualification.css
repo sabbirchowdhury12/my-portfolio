@@ -11,23 +11,18 @@
 .qualification__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-meduim);
-  color: var(--title-color);
   margin: 0 var(--mb-1);
   cursor: pointer;
-  padding: 0.1rem;
+  padding: 0.3rem 0.8rem;
   transition: all 0.3s ease-in-out;
+  color: var(--container-color);
+  background-color: var(--title-color);
+  border-radius: 0.5rem;
 }
 
 .qualification__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
-}
-
-/* Active */
-.qualification__active {
-  color: var(--container-color);
-  background-color: var(--title-color);
-  border-radius: 0.3rem;
 }
 
 .qualification__sections {

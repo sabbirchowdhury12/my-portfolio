@@ -24,7 +24,6 @@ body {
   --container-color: #fff;
   --box-shadow-img: inset 9px 10px 10px 0.5px rgba(0, 0, 10, 0.21);
 
-  /* .5rem = 8px | 1rem = 16px ... */
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -86,7 +85,7 @@ html {
 }
 
 section {
-  padding: 4rem 1rem 2rem;
+  padding: 8rem 1rem 2rem;
   min-height: 100vh;
 }
 
@@ -106,12 +105,14 @@ h3 {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section__subtitle {
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 ul {
@@ -133,5 +134,11 @@ a {
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813;
     --smaller-font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    padding: 2rem;
   }
 }

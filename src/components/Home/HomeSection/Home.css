@@ -89,6 +89,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  color: var(--title-color);
 }
 
 .mouse {
@@ -98,6 +99,7 @@
   border: 3px solid #333;
   border-radius: 60px;
   position: relative;
+
   &::before {
     content: "";
     width: 6px;
@@ -105,8 +107,8 @@
     position: absolute;
     top: 10px;
     left: 50%;
+    background: var(--title-color);
     transform: translateX(-50%);
-    background-color: #333;
     border-radius: 50%;
     opacity: 1;
     animation: anim 2s infinite;
@@ -125,8 +127,6 @@
   height: 10px;
   border: 1px solid #333;
   position: relative;
-  animation: scroll 1.5s infinite;
-  -webkit-animation: scroll 1.5s infinite;
   &::after {
     content: "";
     display: block;

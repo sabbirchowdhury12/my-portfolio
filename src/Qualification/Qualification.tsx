@@ -15,7 +15,7 @@ const Qualification = () => {
         {/* START BUTTON */}
         <div className="qualification__tabs">
           <div className="qualification__button  qualification__active button--flex">
-            {/* <i className="uil uil-graduation-cap qualification__icon"></i> */}
+            <i className="uil uil-graduation-cap qualification__icon"></i>
             Education
           </div>
         </div>
@@ -27,13 +27,13 @@ const Qualification = () => {
             {/* GRP 1 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualififaction__title">UIC</h3>
+                <h3 className="qualififaction__title">Programing Hero</h3>
                 <span className="qualification__subtitle">
-                  Fullstack developement{" "}
+                  Web Design and Development{" "}
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender"></i>
-                  2021 - 2021
+                  2022 - 2023
                 </div>
               </div>
               <div>
@@ -49,26 +49,24 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualififaction__title">Lycée des nations</h3>
+                <h3 className="qualififaction__title">BA(Hons)</h3>
                 <span className="qualification__subtitle">
-                  High School Diploma - Mauritania
+                  Govt. Debendro College
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender"></i>
-                  2009 - 2013
+                  2019 - 2024
                 </div>
               </div>
             </div>
             {/* GRP 3 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualififaction__title">Spanish</h3>
-                <span className="qualification__subtitle">
-                  Spanish course in Sevilla Acoje - Spain
-                </span>
+                <h3 className="qualififaction__title">Youtube - Online</h3>
+                <span className="qualification__subtitle">Online Course</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender"></i>
-                  2015 - 2016
+                  2021 - 2023
                 </div>
               </div>
               <div>
@@ -77,7 +75,7 @@ const Qualification = () => {
               </div>
             </div>
             {/* GRP 4 */}
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualifaction__rounder"></span>
@@ -93,7 +91,7 @@ const Qualification = () => {
                   2021 - present
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Slide>
       </div>

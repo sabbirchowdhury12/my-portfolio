@@ -14,17 +14,18 @@ const Content = () => {
       </Fade>
       <Fade delay={400} triggerOnce>
         <p className="text_content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
-          est nesciunt delectus, impedit nulla cumque vel illum illo velit harum
-          deleniti odit recusandae. Quibusdam ratione possimus eveniet esse,
-          porro harum!
+          I am Sabbir Chowdhury from Bangladesh. I am Learning Programming every
+          single day. I always like to learn new technology and ensure my
+          skills. I am passionate about creating efficient and user-friendly
+          applications using modern technologies.
         </p>
       </Fade>
 
       <Fade triggerOnce delay={300} direction="up">
-        <Button>
+        <Button value="#about">
+          <span> Say Hello</span>
           <svg
-            className="button__icon"
+            className=""
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -41,10 +42,13 @@ const Content = () => {
             ></path>
           </svg>{" "}
         </Button>
-        <div className="scroll">
-          <div className="mouse"></div> <span>scroll down</span>
-          <div className="arrow"></div>
-        </div>
+        <a href="#about" className="scroll">
+          <div className="mouse"></div>{" "}
+          <div className="arrows">
+            <span>Scroll Down</span>
+            <div className="arrow"></div>
+          </div>
+        </a>
       </Fade>
     </div>
   );

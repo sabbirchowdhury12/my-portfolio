@@ -1,13 +1,22 @@
 import React from "react";
-import { Link } from "react-scroll";
 import "./Button.css";
 
-const Button = ({ children }: { children: React.ReactNode }) => {
+const Button = (props: {
+  value: string | undefined;
+  children:
+    | string
+    | number
+    | boolean
+    | React.ReactElement<unknown, string | React.JSXElementConstructor<any>>
+    | React.ReactFragment
+    | React.ReactPortal
+    | null
+    | undefined;
+}) => {
   return (
-    <Link to="contact" className="button">
-      <span> Say Hello</span>
-      {children}
-    </Link>
+    <a download="" href={props.value} className="button">
+      {props.children}
+    </a>
   );
 };
 

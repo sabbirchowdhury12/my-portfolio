@@ -5,14 +5,14 @@ import "./Skill.css";
 
 const Skill = () => {
   return (
-    <section className="skills section" id="skills">
+    <section className="skills" id="skill">
       <Slide direction="left" triggerOnce>
         <h2 className="section__title">Skills</h2>
       </Slide>
       <Slide direction="right" triggerOnce>
         <p className="section__subtitle">My technical level</p>
       </Slide>
-      <div className="skills__container container grid">
+      <div className="skill_container  grid">
         <Slide direction="left" triggerOnce>
           <FrontEndSkill />
         </Slide>

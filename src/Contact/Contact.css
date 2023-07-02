@@ -16,15 +16,25 @@ h2 {
 .contact_card {
   background: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.75rem;
   text-align: center;
   margin-top: 2rem;
 }
 
-.card_title {
-  margin: 1rem 0;
-  color: var(--text-color);
+.card_title h3 {
+  margin-top: 0.5rem;
+  /* color: var(--title-color); */
+}
+
+.card_address {
+  margin-bottom: 1rem;
+}
+
+.contact_icon {
+  font-size: 1rem;
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
 }
 
 body.dark .contact_form_input {
@@ -49,8 +59,20 @@ textarea {
 
 .contact_form textarea {
   resize: none;
-  height: 10rem;
+  height: 13rem;
   margin-bottom: 1rem;
+}
+
+.message-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.message-btn a {
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {

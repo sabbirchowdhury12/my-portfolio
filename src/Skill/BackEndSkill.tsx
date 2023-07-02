@@ -2,10 +2,10 @@ import React from "react";
 
 const BackEndSkill = () => {
   return (
-    <div className="skills__content">
-      <h3 className="skills__title">Backend Development</h3>
-      <div className="skills__box">
-        <div className="skills__group">
+    <div className="skill_content">
+      <h3 className="skill_title">Backend Development</h3>
+      <div className="skill_box">
+        <div className="skill_group">
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
@@ -38,7 +38,7 @@ const BackEndSkill = () => {
           </div>
         </div>
 
-        <div className="skills__group">
+        <div className="skill_group">
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
