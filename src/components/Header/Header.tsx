@@ -3,7 +3,6 @@ import { listNavBar } from "../../utiles/data";
 import darkModeContext from "../../context/darkModeContext";
 import "./Header.css";
 import { Link } from "react-scroll";
-import { AiOutlineHome } from "react-icons/ai";
 import { RiMenuFoldFill } from "react-icons/ri";
 
 const Header: FC = () => {

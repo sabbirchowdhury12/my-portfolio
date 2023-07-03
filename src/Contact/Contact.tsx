@@ -26,7 +26,7 @@ const contactInfo = [
 
 const Contact: FC = () => {
   return (
-    <section className="container">
+    <section className="container" id="contact">
       <Slide direction="left">
         <h2 className="section__title">Get in touch</h2>
       </Slide>

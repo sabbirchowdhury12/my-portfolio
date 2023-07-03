@@ -13,10 +13,19 @@ const Button = (props: {
     | null
     | undefined;
 }) => {
+  console.log(props);
   return (
-    <a download="" href={props.value} className="button">
-      {props.children}
-    </a>
+    <>
+      {props.value === "#contact" ? (
+        <a href={props.value} className="button">
+          {props.children}
+        </a>
+      ) : (
+        <a download="" href={props.value} target="_blank" className="button">
+          {props.children}
+        </a>
+      )}
+    </>
   );
 };
 

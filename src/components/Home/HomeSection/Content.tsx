@@ -22,7 +22,7 @@ const Content = () => {
       </Fade>
 
       <Fade triggerOnce delay={300} direction="up">
-        <Button value="#about">
+        <Button value="#contact">
           <span> Say Hello</span>
           <svg
             className=""
