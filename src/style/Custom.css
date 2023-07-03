@@ -135,10 +135,18 @@ a {
     --small-font-size: 0.813;
     --smaller-font-size: 0.75rem;
   }
-}
 
-@media screen and (max-width: 992px) {
   section {
     padding: 2rem;
+  }
+
+  .section__subtitle {
+    font-size: var(--smaller-font-size);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__subtitle {
+    font-size: var(--smaller-font-size);
   }
 }

@@ -31,13 +31,15 @@ const Header: FC = () => {
     <header className="header ">
       <nav className="nav container">
         <div className="logo">
-          <a href="" target="_blank" rel="noreferrer" className="nav_logo">
+          <a href="#home" rel="noreferrer" className="nav_logo">
             <img
               src="http://localhost:3000/my-portfolio/static/media/syll3.6ef700cbe571a7e8d515.png"
               alt="logo"
             />
           </a>
-          <span className="logo_text">Sabbir Chowdhury</span>
+          <Link to="home" spy={true} smooth={true} duration={50}>
+            <span className="logo_text">Sabbir Chowdhury</span>
+          </Link>
           <div onClick={() => setToggle(!toggle)}>
             <RiMenuFoldFill className="icon" />
           </div>

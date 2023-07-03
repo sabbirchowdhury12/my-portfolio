@@ -1,7 +1,8 @@
-import { FC } from "react";
+import { FC, useRef } from "react";
 import "./Contact.css";
 import Button from "../components/Button/Button";
 import { Slide } from "react-awesome-reveal";
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
@@ -25,6 +26,31 @@ const contactInfo = [
 ];
 
 const Contact: FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_0qscomi",
+          "template_qpz5u3f",
+          form.current,
+          "V15ccPObia6iwywnZ"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("success");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  };
+
   return (
     <section className="container" id="contact">
       <Slide direction="left">
@@ -67,24 +93,28 @@ const Contact: FC = () => {
               <h2>Talk to me</h2>
             </div>
 
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <input
                 className="contact_form_input"
                 type="text"
+                name="user_name"
                 placeholder="your name"
               />
               <input
                 className="contact_form_input"
                 type="email"
+                name="user_email"
                 placeholder="your email"
               />
 
               <textarea
+                name="message"
                 className="contact_form_input"
                 placeholder="write something"
               ></textarea>
 
-              <Button value="#about">
+              <input type="submit" value="Send" />
+              {/* <Button value="#about">
                 <span> send message</span>
                 <svg
                   className=""
@@ -103,7 +133,7 @@ const Contact: FC = () => {
                     fill="var(--container-color)"
                   ></path>
                 </svg>{" "}
-              </Button>
+              </Button> */}
             </form>
           </div>
         </Slide>
