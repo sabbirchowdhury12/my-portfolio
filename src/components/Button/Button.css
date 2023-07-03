@@ -12,7 +12,10 @@
 .button:hover {
   background-color: var(--title-color-dark);
 }
-/* 
-.button_icon {
-  margin-left: var(--mb-0-5);
-} */
+
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+  }
+}
