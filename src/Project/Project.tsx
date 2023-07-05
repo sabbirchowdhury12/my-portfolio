@@ -1,10 +1,10 @@
 import { Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Project.css";
-
+// import { Pagination } from "swiper";
 import img1 from "../assets/phone.png";
 import img2 from "../assets/tour.png";
 import img3 from "../assets/chat.png";
@@ -66,7 +66,7 @@ const Project = () => {
               spaceBetween: 48,
             },
           }}
-          modules={[Pagination]}
+          // modules={[Pagination]}
         >
           {data.map(({ id, title, img_url, live, name, client, server }) => {
             return (

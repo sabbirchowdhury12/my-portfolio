@@ -1,7 +1,3 @@
-import { MenuType } from "./model";
-import { AiOutlineHome } from "react-icons/ai";
-import { RiMenuFoldFill } from "react-icons/ri";
-
 export const listNavBar = [
   {
     id: 1,

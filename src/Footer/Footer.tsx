@@ -12,7 +12,7 @@ const Footer: FC = () => {
         <ul className="footer_list">
           {listNavBar.map((nav, ind) => {
             return (
-              <li>
+              <li key={ind}>
                 <Link
                   to={nav.href}
                   className="footer_link"

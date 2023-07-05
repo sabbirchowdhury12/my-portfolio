@@ -50,15 +50,15 @@ const Contact: FC = () => {
   };
   return (
     <section className="container" id="contact">
-      <Slide direction="left">
+      <Slide direction="left" triggerOnce>
         <h2 className="section__title">Get in touch</h2>
       </Slide>
-      <Slide direction="right">
+      <Slide direction="right" triggerOnce>
         <p className="section__subtitle"> contact me </p>
       </Slide>
 
       <div className="contact_container">
-        <Slide direction="left">
+        <Slide direction="left" triggerOnce>
           {" "}
           <div className="contact_content">
             <div className="contact_title">
@@ -84,7 +84,7 @@ const Contact: FC = () => {
           </div>
         </Slide>
 
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce>
           <div className="contact_form">
             <div className="contact_title">
               <h2>Talk to me</h2>

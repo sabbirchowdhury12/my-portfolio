@@ -59,7 +59,7 @@ const FrontEndSkill = () => {
         <div className="skill_group">
           {frontedFristGroupSkill.map((skill, ind) => {
             return (
-              <div className="skills__data">
+              <div key={ind} className="skills__data">
                 <i className="bx bx-badge-check"></i>
 
                 {/* <img src={skill.icon} alt="" /> */}
@@ -75,7 +75,7 @@ const FrontEndSkill = () => {
         <div className="skill_group">
           {frontedSecondGroupSkill.map((skill, ind) => {
             return (
-              <div className="skills__data">
+              <div key={ind} className="skills__data">
                 <i className="bx bx-badge-check"></i>
                 <div>
                   <h3 className="skills__name">{skill.name}</h3>
