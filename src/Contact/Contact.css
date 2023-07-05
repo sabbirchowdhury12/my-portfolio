@@ -59,7 +59,7 @@ textarea {
 
 .contact_form textarea {
   resize: none;
-  height: 13rem;
+  height: 11rem;
   margin-bottom: 1rem;
 }
 
@@ -75,9 +75,35 @@ textarea {
   color: var(--text-color);
 }
 
+/* //button  */
+
+input.button[type="submit"] {
+  display: block;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  width: 30%;
+  margin: 0;
+}
+
+input.button[type="submit"]:hover {
+  background-color: var(--title-color-dark);
+}
+
+/* @media screen and (max-width: 768px) {
+ 
+} */
+
 @media screen and (max-width: 768px) {
   .contact_container {
     grid-template-columns: 1fr;
     row-gap: 4rem;
+  }
+  input.button[type="submit"] {
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
   }
 }

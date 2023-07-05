@@ -8,7 +8,7 @@
 .skill_content {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   border-radius: 1.25rem;
 }
 .skill_title {
@@ -43,6 +43,7 @@
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
+  text-transform: uppercase;
 }
 .skills__level {
   font-size: var(--tiny-font-size);
@@ -58,13 +59,12 @@
   }
 }
 
-/* Meduim device */
 @media screen and (max-width: 576px) {
   .skill_container {
     grid-template-columns: 1fr;
   }
-  .skills__content {
-    padng: 1.5rem;
+  .skills_content {
+    padding: 1.5rem;
   }
 }
 

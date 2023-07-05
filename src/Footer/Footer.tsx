@@ -51,17 +51,17 @@ const Footer: FC = () => {
           >
             <i className="bx bxl-facebook"></i>
           </a>
-          <a
+          {/* <a
             href="https://twitter.com"
             className="footer_social_link"
             target={"_blank"}
             rel="noreferrer"
           >
             <i className="bx bxl-twitter"></i>
-          </a>
+          </a> */}
         </div>
         <span className="footer_copy">
-          &#169; Copyright {"  "} 2023. {"  "}All rigths reserved by Sabbir
+          &#169; Copyright {"  "} 2023. {"  "}All rigths reserved by || Sabbir
           Chowdhury.
         </span>
       </div>

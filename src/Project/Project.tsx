@@ -52,7 +52,7 @@ const Project = () => {
         <h2 className="section__title">Projects</h2>
       </Slide>
       <Slide direction="right" triggerOnce>
-        <p className="section__subtitle">Check my projects</p>
+        <p className="section__subtitle">my projects</p>
       </Slide>
       <Slide direction="left" triggerOnce>
         <Swiper

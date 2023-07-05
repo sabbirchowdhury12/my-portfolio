@@ -1,4 +1,47 @@
-import React from "react";
+const backEndFristGroupSkills = [
+  {
+    icon: "bx bx-badge-check",
+    name: "Node  JS",
+    level: "Beginner",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Mongoose",
+    level: "Beginner",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Firbase",
+    level: "Intermediate",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Vercel",
+    level: "Intermediate",
+  },
+];
+const backEndSecondGroupSkills = [
+  {
+    icon: "bx bx-badge-check",
+    name: "Express JS",
+    level: "Intermediate",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "MongoDB",
+    level: "Intermediate",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "JWT",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Shocket io",
+    level: "Beginner",
+  },
+];
 
 const BackEndSkill = () => {
   return (
@@ -6,69 +49,26 @@ const BackEndSkill = () => {
       <h3 className="skill_title">Backend Development</h3>
       <div className="skill_box">
         <div className="skill_group">
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Node Js</h3>
-              <span className="skills__level">Advanced</span>
+          {backEndFristGroupSkills.map((skill) => (
+            <div className="skills__data">
+              <i className={skill.icon}></i>
+              <div>
+                <h3 className="skills__name">{skill.name}</h3>
+                <span className="skills__level">{skill.level}</span>
+              </div>
             </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Python</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">AWS</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
+          ))}
         </div>
-
         <div className="skill_group">
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">PostgreSQL</h3>
-              <span className="skills__level">Advanced</span>
+          {backEndSecondGroupSkills.map((skill) => (
+            <div className="skills__data">
+              <i className={skill.icon}></i>
+              <div>
+                <h3 className="skills__name">{skill.name}</h3>
+                <span className="skills__level">{skill.level}</span>
+              </div>
             </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">MongoDB</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Postman</h3>
-              <span className="skills__level">Advanced</span>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

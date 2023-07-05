@@ -9,7 +9,7 @@ const Qualification = () => {
         <h2 className="section__title">Qualification</h2>
       </Slide>
       <Slide direction="right" triggerOnce>
-        <p className="section__subtitle">My personal journey</p>
+        <p className="section__subtitle">My laerning steps</p>
       </Slide>
       <div className="qualification__container container">
         {/* START BUTTON */}

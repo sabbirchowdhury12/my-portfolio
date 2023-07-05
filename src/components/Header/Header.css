@@ -30,7 +30,6 @@
   object-fit: cover;
   border: 1px solid var(--title-color-dark);
   background-color: var(--container-color);
-  padding: 2.5px;
   transition: 1s;
   animation: logo infinite 3s ease-in-out;
   cursor: pointer;

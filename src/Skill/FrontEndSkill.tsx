@@ -1,6 +1,6 @@
 import mehu from "../assets/mehu-2.jpg";
 
-const frontedFristGroupSkillData = [
+const frontedFristGroupSkill = [
   {
     icon: mehu,
     name: "HTML",
@@ -23,10 +23,10 @@ const frontedFristGroupSkillData = [
   },
 ];
 
-const frontedSecondGroupSkillData = [
+const frontedSecondGroupSkill = [
   {
     icon: "bx bx-badge-check",
-    name: "TAILWIND",
+    name: "CSS",
     level: "Advanced",
   },
   // {
@@ -46,7 +46,7 @@ const frontedSecondGroupSkillData = [
   },
   {
     icon: "bx bx-badge-check",
-    name: "GIT",
+    name: "TAILWIND",
     level: "Advanced",
   },
 ];
@@ -57,7 +57,7 @@ const FrontEndSkill = () => {
       <h3 className="skill_title">Frontend Development </h3>
       <div className="skill_box">
         <div className="skill_group">
-          {frontedFristGroupSkillData.map((skill, ind) => {
+          {frontedFristGroupSkill.map((skill, ind) => {
             return (
               <div className="skills__data">
                 <i className="bx bx-badge-check"></i>
@@ -73,7 +73,7 @@ const FrontEndSkill = () => {
         </div>
 
         <div className="skill_group">
-          {frontedSecondGroupSkillData.map((skill, ind) => {
+          {frontedSecondGroupSkill.map((skill, ind) => {
             return (
               <div className="skills__data">
                 <i className="bx bx-badge-check"></i>

@@ -60,7 +60,7 @@
 }
 
 .home_img {
-  background: url("http://localhost:3000/my-portfolio/static/media/avatar.0df030584a2b001d67fe.png");
+  background: url("../../../assets/me3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,7 +94,7 @@
 
 .mouse {
   display: block;
-  width: 20px;
+  width: 25px;
   height: 50px;
   border: 3px solid #333;
   border-radius: 60px;
@@ -107,9 +107,14 @@
     position: absolute;
     top: 10px;
     left: 50%;
-    background: var(--title-color);
+    width: 1px;
+    height: 10px;
+    border-top: 10px solid var(--title-color);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    /* background: var(--title-color); */
     transform: translateX(-50%);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     opacity: 1;
     animation: anim 2s infinite;
   }
@@ -138,6 +143,7 @@
     border-top: 10px solid #333;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+    animation: anim 2s infinite;
   }
 } */
 

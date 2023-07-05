@@ -4,6 +4,7 @@ import darkModeContext from "../../context/darkModeContext";
 import "./Header.css";
 import { Link } from "react-scroll";
 import { RiMenuFoldFill } from "react-icons/ri";
+import img from "../../assets/me5.png";
 
 const Header: FC = () => {
   const { isDarkMode, toggleIsDarkMode } = useContext(darkModeContext);
@@ -32,10 +33,7 @@ const Header: FC = () => {
       <nav className="nav container">
         <div className="logo">
           <a href="#home" rel="noreferrer" className="nav_logo">
-            <img
-              src="http://localhost:3000/my-portfolio/static/media/syll3.6ef700cbe571a7e8d515.png"
-              alt="logo"
-            />
+            <img src={img} alt="logo" />
           </a>
           <Link to="home" spy={true} smooth={true} duration={50}>
             <span className="logo_text">Sabbir Chowdhury</span>
