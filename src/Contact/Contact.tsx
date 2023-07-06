@@ -2,27 +2,7 @@ import { FC, useRef } from "react";
 import "./Contact.css";
 import { Slide } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
-
-const contactInfo = [
-  {
-    icon: "fa-regular fa-envelope",
-    name: "Email",
-    address: "email@gmail.com",
-    link: "mailto:sabbirchowdhury40854@gmail.com",
-  },
-  {
-    icon: "fa-brands fa-whatsapp",
-    name: "Whatsapp",
-    address: "+8801989969238",
-    link: "https://api.whatsapp.com/send?phone=01989969238&text=Hello",
-  },
-  {
-    icon: "fa-brands fa-facebook-messenger",
-    name: "Messenger",
-    address: "Sabbir Chowdhury",
-    link: "https://www.facebook.com/profile.php?id=100075403486886",
-  },
-];
+import { contactInfoData } from "../utiles/data";
 
 const Contact: FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -66,7 +46,7 @@ const Contact: FC = () => {
             </div>
 
             <div className="contact_info">
-              {contactInfo.map((info, ind) => {
+              {contactInfoData.map((info, ind) => {
                 return (
                   <div key={ind} className="contact_card">
                     <i className={`${info.icon} contact_icon`}></i>

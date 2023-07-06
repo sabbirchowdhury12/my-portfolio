@@ -1,7 +1,8 @@
+import { FC } from "react";
 import Content from "./HomeSection/Content";
 import Social from "./HomeSection/Social";
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <section className="home container">
       <Social />

@@ -152,3 +152,9 @@ a {
     font-size: var(--smaller-font-size);
   }
 }
+
+@media screen and (max-width: 576px) {
+  section {
+    padding: 1rem;
+  }
+}

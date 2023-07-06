@@ -1,63 +1,16 @@
-import mehu from "../assets/mehu-2.jpg";
+import { FC } from "react";
+import {
+  frontedFristGroupSkills,
+  frontedSecondGroupSkills,
+} from "../utiles/data";
 
-const frontedFristGroupSkill = [
-  {
-    icon: mehu,
-    name: "HTML",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Typescript",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "BOOTSTRAP",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "GIT",
-    level: "Advanced",
-  },
-];
-
-const frontedSecondGroupSkill = [
-  {
-    icon: "bx bx-badge-check",
-    name: "CSS",
-    level: "Advanced",
-  },
-  // {
-  //   icon: "bx bx-badge-check",
-  //   name: "Styled-components",
-  //   level: "Advanced",
-  // },
-  {
-    icon: "bx bx-badge-check",
-    name: "JAVASCRIPT",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "React JS",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "TAILWIND",
-    level: "Advanced",
-  },
-];
-
-const FrontEndSkill = () => {
+const FrontEndSkill: FC = () => {
   return (
     <div className="skill_content">
       <h3 className="skill_title">Frontend Development </h3>
       <div className="skill_box">
         <div className="skill_group">
-          {frontedFristGroupSkill.map((skill, ind) => {
+          {frontedFristGroupSkills.map((skill, ind) => {
             return (
               <div key={ind} className="skills__data">
                 <i className="bx bx-badge-check"></i>
@@ -73,7 +26,7 @@ const FrontEndSkill = () => {
         </div>
 
         <div className="skill_group">
-          {frontedSecondGroupSkill.map((skill, ind) => {
+          {frontedSecondGroupSkills.map((skill, ind) => {
             return (
               <div key={ind} className="skills__data">
                 <i className="bx bx-badge-check"></i>

@@ -1,8 +1,9 @@
+import { FC } from "react";
 import { Rotate, Fade } from "react-awesome-reveal";
 import Button from "../../Button/Button";
 import "./Home.css";
 
-const Content = () => {
+const Content: FC = () => {
   return (
     <div className="content">
       <Rotate triggerOnce>

@@ -1,8 +1,9 @@
+import { FC } from "react";
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import "./Home.css";
 import { Fade } from "react-awesome-reveal";
 
-const Social = () => {
+const Social: FC = () => {
   return (
     <div className="social-icon">
       <Fade direction="up" triggerOnce delay={100}>

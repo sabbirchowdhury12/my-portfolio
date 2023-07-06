@@ -1,8 +1,8 @@
+import { FC } from "react";
 import { Slide } from "react-awesome-reveal";
-
 import "./Qualification.css";
 
-const Qualification = () => {
+const Qualification: FC = () => {
   return (
     <section id="qualification">
       <Slide direction="left" triggerOnce>

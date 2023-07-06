@@ -3,24 +3,8 @@ import Button from "../Button/Button";
 import "./About.css";
 import Resume from "../../assets/Sabbir_Chowdhury_Resume.pdf";
 import img from "../../assets/me6.png";
+import { aboutCards } from "../../utiles/data";
 
-const card = [
-  {
-    icon: "fa-solid fa-flag",
-    name: "Nationality",
-    desc: "Bangladeshi",
-  },
-  {
-    icon: "fa-solid fa-location-dot",
-    name: "Location",
-    desc: "Manikganj, Dhaka",
-  },
-  {
-    icon: "fa-solid fa-message",
-    name: "Support",
-    desc: "24/7 -- online",
-  },
-];
 const About = () => {
   return (
     <section className="about container" id="about">
@@ -36,7 +20,7 @@ const About = () => {
         <div className="info">
           <Slide direction="right" triggerOnce>
             <div className="card">
-              {card.map((card) => {
+              {aboutCards.map((card) => {
                 return (
                   <div className="box">
                     <i className={`${card.icon} about_icon`}></i>

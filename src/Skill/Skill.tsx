@@ -1,9 +1,10 @@
+import { FC } from "react";
 import { Slide } from "react-awesome-reveal";
 import FrontEndSkill from "./FrontEndSkill";
 import BackEndSkill from "./BackEndSkill";
 import "./Skill.css";
 
-const Skill = () => {
+const Skill: FC = () => {
   return (
     <section className="skills" id="skill">
       <Slide direction="left" triggerOnce>

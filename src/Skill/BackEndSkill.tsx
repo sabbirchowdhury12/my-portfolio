@@ -1,49 +1,10 @@
-const backEndFristGroupSkills = [
-  {
-    icon: "bx bx-badge-check",
-    name: "Node  JS",
-    level: "Beginner",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Mongoose",
-    level: "Beginner",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Firbase",
-    level: "Intermediate",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Vercel",
-    level: "Intermediate",
-  },
-];
-const backEndSecondGroupSkills = [
-  {
-    icon: "bx bx-badge-check",
-    name: "Express JS",
-    level: "Intermediate",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "MongoDB",
-    level: "Intermediate",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "JWT",
-    level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Shocket io",
-    level: "Beginner",
-  },
-];
+import { FC } from "react";
+import {
+  backEndFristGroupSkills,
+  backEndSecondGroupSkills,
+} from "../utiles/data";
 
-const BackEndSkill = () => {
+const BackEndSkill: FC = () => {
   return (
     <div className="skill_content">
       <h3 className="skill_title">Backend Development</h3>
