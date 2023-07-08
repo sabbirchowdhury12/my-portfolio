@@ -3,6 +3,7 @@ import "./Contact.css";
 import { Slide } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import { contactInfoData } from "../utiles/data";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact: FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -21,15 +22,19 @@ const Contact: FC = () => {
         .then(
           (result) => {
             console.log(result.text);
+            (e.target as HTMLFormElement).reset();
+            toast.success("email send successfully");
           },
           (error) => {
             console.log(error.text);
+            toast.error("something wrong");
           }
         );
     }
   };
   return (
     <section className="container" id="contact">
+      <Toaster position="top-center" reverseOrder={false} />
       <Slide direction="left" triggerOnce>
         <h2 className="section__title">Get in touch</h2>
       </Slide>
@@ -76,18 +81,21 @@ const Contact: FC = () => {
                 type="text"
                 name="from_name"
                 placeholder="your name"
+                required
               />
               <input
                 className="contact_form_input"
                 type="email"
                 name="from_email"
                 placeholder="your email"
+                required
               />
 
               <textarea
                 name="message"
                 className="contact_form_input"
                 placeholder="write something"
+                required
               ></textarea>
 
               <input className="button" type="submit" value="Send" />
