@@ -1,7 +1,7 @@
 import { Fade, Slide } from "react-awesome-reveal";
 import Button from "../Button/Button";
 import "./About.css";
-import Resume from "../../assets/Sabbir_Chowdhury_Resume.pdf";
+import Resume from "../../assets/sabbir-chowdhury-resume.pdf";
 import img from "../../assets/me6.png";
 import { aboutCards } from "../../utiles/data";
 
