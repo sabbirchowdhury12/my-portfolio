@@ -7,7 +7,7 @@ import {
 const BackEndSkill: FC = () => {
   return (
     <div className="skill_content">
-      <h3 className="skill_title">Backend Development</h3>
+      <h3 className="skill_title">Backend Technology</h3>
       <div className="skill_box">
         <div className="skill_group">
           {backEndFristGroupSkills.map((skill) => (

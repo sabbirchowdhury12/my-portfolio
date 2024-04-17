@@ -11,7 +11,7 @@ const Skill: FC = () => {
         <h2 className="section__title">Skills</h2>
       </Slide>
       <Slide direction="right" triggerOnce>
-        <p className="section__subtitle">My technical level</p>
+        <p className="section__subtitle">My technical Skills level</p>
       </Slide>
       <div className="skill_container  grid">
         <Slide direction="left" triggerOnce>

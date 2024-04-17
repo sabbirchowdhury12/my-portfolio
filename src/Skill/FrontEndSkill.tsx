@@ -7,7 +7,7 @@ import {
 const FrontEndSkill: FC = () => {
   return (
     <div className="skill_content">
-      <h3 className="skill_title">Frontend Development </h3>
+      <h3 className="skill_title">Frontend Technology </h3>
       <div className="skill_box">
         <div className="skill_group">
           {frontedFristGroupSkills.map((skill, ind) => {

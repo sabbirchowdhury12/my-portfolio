@@ -8,6 +8,8 @@ import {
 import img1 from "../assets/phone.png";
 import img2 from "../assets/tour.png";
 import img3 from "../assets/chat.png";
+import autox from "../assets/auto-x.png";
+import goTrip from "../assets/Go-trip.png";
 
 export const listNavBar: NavbarType[] = [
   {
@@ -69,27 +71,48 @@ export const aboutCards: AboutCardType[] = [
 export const frontedFristGroupSkills: SkillType[] = [
   {
     icon: "bx bx-badge-check",
-    name: "HTML",
-    level: "Advanced",
+    name: "Next JS",
+    level: "Intermediate",
   },
+
   {
     icon: "bx bx-badge-check",
-    name: "Typescript",
+    name: "JAVASCRIPT",
     level: "Intermediate",
   },
   {
     icon: "bx bx-badge-check",
-    name: "BOOTSTRAP",
-    level: "Advanced",
+    name: "Shadcn",
+    level: "Intermediate",
   },
   {
     icon: "bx bx-badge-check",
     name: "GIT",
     level: "Intermediate",
   },
+  {
+    icon: "bx bx-badge-check",
+    name: "HTML",
+    level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "STYLED-COM",
+    level: "Intermediate",
+  },
 ];
 
 export const frontedSecondGroupSkills: SkillType[] = [
+  {
+    icon: "bx bx-badge-check",
+    name: "React JS",
+    level: "Intermediate",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Redux",
+    level: "Intermediate",
+  },
   {
     icon: "bx bx-badge-check",
     name: "CSS",
@@ -102,18 +125,19 @@ export const frontedSecondGroupSkills: SkillType[] = [
   // },
   {
     icon: "bx bx-badge-check",
-    name: "JAVASCRIPT",
-    level: "Intermediate",
+    name: "BOOTSTRAP",
+    level: "Advanced",
   },
-  {
-    icon: "bx bx-badge-check",
-    name: "React JS",
-    level: "Intermediate",
-  },
+
   {
     icon: "bx bx-badge-check",
     name: "TAILWIND",
     level: "Advanced",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "MUI",
+    level: "Beginner",
   },
 ];
 
@@ -125,18 +149,23 @@ export const backEndFristGroupSkills: SkillType[] = [
   },
   {
     icon: "bx bx-badge-check",
-    name: "Mongoose",
+    name: "NEST JS ",
     level: "Beginner",
   },
   {
     icon: "bx bx-badge-check",
-    name: "Firbase",
+    name: "MONGOOSE",
     level: "Intermediate",
   },
   {
     icon: "bx bx-badge-check",
-    name: "Vercel",
-    level: "Intermediate",
+    name: "FIRBASE",
+    level: "Beginner",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Nodemailer",
+    level: "Beginner",
   },
 ];
 export const backEndSecondGroupSkills: SkillType[] = [
@@ -150,21 +179,58 @@ export const backEndSecondGroupSkills: SkillType[] = [
     name: "MongoDB",
     level: "Intermediate",
   },
+
+  {
+    icon: "bx bx-badge-check",
+    name: "Prisma",
+    level: "Beginner",
+  },
+  {
+    icon: "bx bx-badge-check",
+    name: "Postgres",
+    level: "Beginner",
+  },
   {
     icon: "bx bx-badge-check",
     name: "JWT",
     level: "Advanced",
-  },
-  {
-    icon: "bx bx-badge-check",
-    name: "Shocket io",
-    level: "Beginner",
   },
 ];
 
 export const projectData: ProjectDataType[] = [
   {
     id: 1,
+    title: "Auto-X (Car-Rental)",
+    img_url: autox,
+    client: "https://github.com/sabbirchowdhury12/nextjs-auto-X-frontend",
+    server: "https://github.com/sabbirchowdhury12/auto-X-backend",
+    live: "https://autox-frontend.vercel.app",
+    name: "Auto-X ",
+  },
+  {
+    id: 2,
+    title: "GoTrip (Service Provider Website)",
+    img_url: goTrip,
+    client:
+      "https://github.com/sabbirchowdhury12/full-stack-tourist-service-frontend",
+    server:
+      "https://github.com/sabbirchowdhury12/full-stack-tourist-service-backend",
+    live: "https://full-stack-tourist-service-frontend.vercel.app",
+    name: "GoTrip",
+  },
+  {
+    id: 3,
+    title: "Chat App",
+    img_url: img3,
+    client:
+      "https://github.com/sabbirchowdhury12/mern-stack-chat-application-client-side",
+    server:
+      "https://github.com/sabbirchowdhury12/mern-stack-chat-application-server-side",
+    live: "https://mern-stack-chat-app.netlify.app",
+    name: "Chat Application",
+  },
+  {
+    id: 4,
     title: "Resale Phone",
     img_url: img1,
     client:
@@ -175,7 +241,7 @@ export const projectData: ProjectDataType[] = [
     name: "Resale and Buy Phone",
   },
   {
-    id: 2,
+    id: 5,
     title: "Tour Website",
     img_url: img2,
     client:
@@ -184,18 +250,6 @@ export const projectData: ProjectDataType[] = [
       "https://github.com/sabbirchowdhury12/mern-stack-tourist-service-website-server",
     live: "https://world-tourist-website.web.app/",
     name: "Tour Website",
-  },
-
-  {
-    id: 3,
-    title: "Chat App",
-    img_url: img3,
-    client:
-      "https://github.com/sabbirchowdhury12/-mern-stack-chat-application-client-side",
-    server:
-      "https://github.com/sabbirchowdhury12/mern-stack-chat-application-server-side",
-    live: "https://mern-stack-chat-app.netlify.app/profile",
-    name: "Chat Application",
   },
 ];
 
